@@ -11,7 +11,7 @@ expect(response.body.weatherText).toBe("City name is required!");
 });
 
 it("should return 404 if city is not found", async () => {
-const response = await request.post("/weather").send({ cityName: "xyzcity123" });
+const response = await request.post("/weather").send({ cityName: "UnknownCity" });
 expect(response.status).toBe(404);
 expect(response.body.weatherText).toBe("City is not found!");
 });
