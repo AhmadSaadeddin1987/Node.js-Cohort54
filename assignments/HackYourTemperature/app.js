@@ -19,7 +19,7 @@ return res.status(400).json({
 
 try {
 const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${keys.API_KEY}&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${keys.API_KEY}&units=metric`,
 );
 
 const data = await response.json();

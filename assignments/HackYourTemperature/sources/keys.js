@@ -1,5 +1,8 @@
-const keys = { 
-    API_KEY: '14d8a31857f35df6d6a6cead583ddcab',
+import dotenv from 'dotenv';
+dotenv.config();
+
+const keys = {
+    API_KEY: process.env.API_KEY
 };
 
 export default keys;

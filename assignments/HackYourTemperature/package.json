@@ -6,19 +6,24 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "start": "node server.js",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.28.5",
     "babel-jest": "^30.2.0",
+    "husky": "^9.1.7",
     "jest": "^30.2.0",
+    "lint-staged": "^16.2.6",
     "supertest": "^7.1.4"
   }
 }
